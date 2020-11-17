@@ -1,0 +1,110 @@
+/*Popular Products*/
+
+/*Fondo Popular Products*/
+
+.popular-products{
+    width:100%;
+    height: 30em;
+    background-size: cover; 
+    background-image: url("../images/popularstore.png");
+}
+
+.popular-products h2{
+    font-family: var(--texto-parrafo);
+    font-size: 31px;
+    color: var(--color-title);
+    user-select: none;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.popular-products p{
+    width: 450px;
+    font-family: var(--texto-parrafo);
+    font-size: 16px;
+    color: var( --color-title-parrafo);
+    padding-top: 10px;
+    user-select: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+/*Ultimos-Productos*/
+.ultimos-products-1{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ultimos-products-2{
+    text-align: center;
+}
+
+.image-1, .image-2, .image-3, .image-4, .image-5, .image-6{
+    display: inline-block;
+}
+
+.image img{
+    width: 150px;
+    margin: 30px;
+    padding: 10px;
+}
+.image {
+    width: 210px;
+    position: relative;
+    background-color: var(--background-carrito);
+    border-radius: 20px;
+    margin-left:15px;
+    margin-right:15px;
+    margin-bottom: 15px;
+}
+
+.image h2 {
+    font-size: 16px;
+    position: absolute;
+    top: 175px;
+    left: 130px;
+    margin: 0 auto; 
+    background-color: var(--color-white);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.image:hover{
+    background-color: var(--color-title-parrafo);
+    transition: 0.3s;
+    cursor: pointer;
+    -webkit-box-shadow: -3px 3px 27px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 27px 1px rgba(0,0,0,0.75);
+     box-shadow: -3px 3px 27px 1px rgba(0,0,0,0.75);
+}
+
+/*BotonVerMas*/
+
+.btn-ver-mas{
+    width: 60%;
+    background-color: var(--color-title-parrafo);
+    border-radius: 50px;
+    margin: 15px auto;
+}
+
+.btn-ver-mas:hover{
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+/*Responsive Desing*/
+
+@media screen and (max-width: 872px){
+    .popular-products{
+        margin-top: 170px;
+    }
+}
+
+@media screen and (max-width: 454px){
+    .popular-products p{
+        width: auto;
+        padding: 10px;
+    }
+}

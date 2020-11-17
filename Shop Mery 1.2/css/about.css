@@ -1,0 +1,168 @@
+/*About de la Web*/
+
+/*Fondo*/
+.about{
+    width:100%;
+    height: 29em;
+    background-size: cover; 
+    background-image: url("../images/about.png");
+}
+
+/*Colocación de las cajas*/
+.sobre-product{
+    width:450px;
+    float: right;
+    margin-right: 250px;
+}
+
+.img-about{
+    display: flex;
+    float: left;
+}
+
+.img-about img{
+    width: 500px;
+}
+
+/*Texto del About*/
+.sobre-product h2{
+    font-family: var(--text-superior);
+    font-size: 48px;
+    color: var(--color-title);
+    user-select: none;
+    padding-top: 15px;
+} 
+
+.sobre-product p{
+    font-family: var(--texto-parrafo);
+    font-size: 15px;
+    color: var( --color-title-parrafo);
+    padding-top: 20px;
+    user-select: none;
+}
+
+/*Boton de Siguiente*/
+
+.ver-product{
+    width: 135px;
+    background-color: var(--background-carrito);
+    text-align: center;
+    color: var(--color-white);
+    border-radius: 3px;
+    font-size: 30px;
+}
+
+.ver-product:hover{
+    background-color: var(--color-title-parrafo);
+    transition: 0.3s;
+}
+
+.fa-long-arrow-alt-right{
+    padding: 12px 0px 12px 0px;
+}
+
+/*Fin de About*/
+
+/*Responsive Desing*/
+
+@media screen and (max-width: 632px){
+   
+    .about{
+        margin-top: 70px;
+    }
+
+}
+
+@media screen and (max-width: 1293px){
+   
+    .img-about img{
+        width: 470px;
+    }
+
+    .sobre-product{
+        width:400px;
+        float: right;
+        margin-right: 100px;
+    }
+
+}
+
+@media screen and (max-width: 991px){
+   
+    .img-about img{
+        width: 460px;
+    }
+
+    .sobre-product{
+        width:400px;
+        float: right;
+        margin-right: 30px;
+    }
+
+}
+
+@media screen and (max-width: 910px){
+   
+    .img-about img{
+        width: 440px;
+    }
+
+    .sobre-product{
+        width:400px;
+        float: right;
+        margin-right: 20px;
+    }
+
+    .sobre-product h2{
+        font-size: 40px;   
+    }
+
+    .btnshop{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 872px){
+   
+    .img-about img{
+        width: 360px;
+        display: block;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .sobre-product{
+        display: block;
+        width: auto;
+    }
+
+    .sobre-product h2{
+        font-size: 40px;   
+        text-align: center;
+    }
+
+    .sobre-product p{
+        width: auto;
+        text-align: center;
+        padding: 10px 50px 15px 50px;
+    }
+
+    .btnshop{
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    .img-about{
+        display: block;
+        float: none;
+    }
+
+    .fa-long-arrow-alt-right{
+        display: none;
+    }
+
+}
+
